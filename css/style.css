@@ -1,0 +1,754 @@
+body{
+    margin: 0;
+}
+#home {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/download.jpeg');
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+}
+#home .test {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.832);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+}
+#home .caption {
+    width: 500px;
+    text-align: center;
+    padding-top: 250px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 99;
+}
+#home .caption h1 {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color:#ff305b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#home .caption h4 span::after {
+    content: "";
+    animation: typing 5s ease 1s infinite alternate ;
+}
+@keyframes typing {
+    0% {content:"D|"}
+    6% {content:"De|"}
+    12% {content:"Des|"}
+    18% {content:"Desi|"}
+    24% {content:"Desig|"}
+    30% {content:"Design|"}
+    36% {content:"Designe|"}
+    42% {content:"Designer|"}
+    48% {content:"Designe|"}
+    55% {content:"Design|"}
+    65% {content:"Desig|"}
+    70% {content:"Desi|"}
+    75% {content:"Des|"}
+    81% {content:"De|"}
+    90% {content:"D|"}
+    100% {content:"|"}
+}
+#home .caption h3, h4 {
+    color: #fff;
+    /* letter-spacing: 1px; */
+    font-size: 30px;
+}
+/* #home .caption span {
+    transition: all 1s 2s;
+}
+#home:hover span {
+    transform: translate();
+} */
+#home .navbar {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.832);
+    position: fixed;
+    z-index: 33333;
+}
+#home:hover .navbar {
+    background-color: transparent;
+}
+#home h2 a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ff305b;
+    text-decoration: none;
+    float: left;
+    padding: 20px;
+    padding-left: 80px;
+}
+.navbar ul {
+    float: right;
+    list-style: none;
+    padding-right: 80px;
+}
+.navbar ul li {
+    display: inline-block; 
+    padding: 10px; 
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;  
+}
+.navbar ul li a:hover {
+    color: #ff305b;
+}
+.clr {
+    clear: both;
+}
+
+#about {
+    width: 70%;
+    margin: auto;
+}
+#about .about-image {
+    width: 30%;
+    float: left;
+    margin-top: 80px;
+    border: 10px solid rgba(83, 82, 82, 0.795);
+    border-radius: 5px;   
+}
+#about .about-image .image {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 333;
+    overflow: hidden;
+}
+#about .about-image .image img {
+    width: 100%;
+}
+#about .about-image .layer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(83, 82, 82, 0.795);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3333;
+    transition: 1s;
+}
+#about .about-image .image:hover .layer{
+    top: 0; 
+}
+#about .about-image .image .layer li {
+    display: inline-block;
+}
+#about .about-image .layer ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#about .layer a {
+    color: #fff;
+    transition: 1s;
+}
+#about .about-image .image .layer a:hover {
+    color: #ff305b;
+}
+#about .about-info {
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+#about .about-info h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ff305b;
+}
+#about .about-info p, td {
+    color: gray;
+    font-size: 20px;
+}
+#about .about-info span {
+    color: black;
+}
+#about .about-info .tbl1 {
+    width: 40%;
+    float: left;
+}
+#about .about-info .tbl2 {
+    width: 60%;
+    float: right;
+}
+.clr {
+    clear: both;
+}
+#about .about-info button {
+    padding: 10px 25px;
+    color: #fff;
+    font-size: large;
+    background-color: #ff305b;
+    border: none;
+    border-radius: 4px;
+    transition: 1s;
+    margin-right: 20px;
+}
+#about .about-info button:hover {
+    background-color: red;
+}
+.clr {
+    clear: both;
+}
+
+
+
+#services {
+    width: 100%;
+    background-color: #f1f1f1 ;
+}
+#services .titleservice {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+#services .titleservice h2 {
+    padding-top: 80px;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(47, 46, 46);
+    font-family: "Amatic SC", sans-serif;
+}
+#services .titleservice .line {
+    width: 80px;
+    height: 4px;
+    border-bottom: 1px solid #ff305b;
+    margin: auto;
+}
+#services .titleservice .centerline {
+    width: 160px;
+    height: 4px;
+    margin: auto;
+    border-bottom: 1px solid #ff305b;
+} 
+#services .container {
+    width: 80%;
+    background-color: #f1f1f1;
+    margin: auto;
+    margin-top: 40px;
+}
+#services .container .title {
+    background-color: #f1f1f1;
+    width: 25%;
+    margin-bottom: 50px;
+    text-align: center;
+    float: left;
+    transition: 1s;
+}
+#services .container .title:hover {
+    background-color: #fff;
+}
+#services .container .title:hover img {
+    scale: 1.2;
+}
+#services .container .title img {
+    width: 15%;
+    padding-top: 30px; 
+    transition: 1s; 
+}
+#services .container .title h3 {
+    color: rgb(47, 46, 46);
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#services .container .title p {
+    color: gray;
+    padding: 10px 30px;
+}
+.clr {
+    clear: both;
+}
+
+#portfolio {
+    width: 100%;
+    margin-top: 40px;
+}
+#portfolio h2 {
+    padding-top: 80px;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(47, 46, 46);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#portfolio .line {
+    width: 80px;
+    height: 4px;
+    border-bottom: 1px solid #ff305b;
+    margin: auto;
+}
+#portfolio .centerline {
+    width: 160px;
+    height: 4px;
+    margin: auto;
+    border-bottom: 1px solid #ff305b;
+} 
+#portfolio .items {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#portfolio .items ul {
+    list-style: none;
+    text-align: center;
+    padding: 15px;
+}
+#portfolio .items ul li {
+    display: inline-block;
+    padding: 0 10px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#portfolio .items ul li a {
+    color: rgb(47, 46, 46);
+    text-decoration: none;
+}
+#portfolio .items ul span {
+    color: #ff305b;
+}
+#portfolio .portfolio-area {
+    width: 80%;
+    margin: auto;
+}
+.portfolio-area .portfolio-image {
+    width: 33.333%;
+
+    float: left;
+}
+.portfolio-area .portfolio-image .layers {
+    padding: 20px;
+}
+.portfolio-area .images {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-area .images img {
+   width: 100%;
+}
+.clr {
+    clear: both;
+}
+#portfolio .portfolio-image .layer i {
+    color: #ff305b;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#portfolio .portfolio-image .layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(83, 82, 82, 0.795);
+    position: absolute;
+    top: 0%;
+    left: 0;
+    opacity: 0;
+    z-index: 33;
+    transition: 0.5s; 
+}
+#portfolio .portfolio-image .images:hover .layer{
+    opacity: 1;
+    cursor:pointer;
+}
+
+#break {
+    background-color: #f1f1f1;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#break .container {
+    width: 70%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+}
+#break .container .info {
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+}
+#break .container .info i {
+    color: #ff305b;
+    size: 50px;
+}
+#break .container .info h3 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#break .container .info h5 {
+    color: rgba(83, 82, 82, 0.795);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.clr {
+    clear: both;
+}
+#testimonial {
+    width: 100%;
+    background-color: #fff;
+}
+#testimonial h2 {
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(47, 46, 46);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#testimonial .line {
+    width: 80px;
+    height: 4px;
+    border-bottom: 1px solid #ff305b;
+    margin: auto;
+}
+#testimonial .centerline {
+    width: 160px;
+    height: 4px;
+    margin: auto;
+    border-bottom: 1px solid #ff305b;
+} 
+#testimonial .feedback-info {
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    border: 5px solid #f1f1f1;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+#testimonial .feedback-info .feedback-image {
+    width: 20%;
+    padding-top: 40px;
+    padding-left:30px;
+    background: linear-gradient(135deg, #ff305b 50%, #f1f1f1 50% );
+    float: left;
+    box-sizing: border-box;
+}
+#testimonial .feedback-info .feedback-image img {
+    width: 100%;
+     border: 2px solid transparent;
+    border-radius: 50%;
+}
+#testimonial .feedback-info .text {
+    width: 80%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    float:right;
+}
+#testimonial .feedback-info .text h3 {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#testimonial .feedback-info .text .loc {
+    color:#f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#testimonial .feedback-info .text p {
+    color: gray;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#testimonial .feedback-info .text ul {
+    list-style: none;
+}
+#testimonial .feedback-info .text ul li {
+    display: inline-block;
+    color: rgb(248, 198, 91);
+}
+#testimonial .feedback-info .text .active {
+    color: gray;
+}
+.clr {
+    clear: both;
+}
+
+#blog {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding-bottom: 80px;
+}
+#blog h2 {
+    padding-top: 80px;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(47, 46, 46);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#blog .line {
+    width: 80px;
+    height: 4px;
+    border-bottom: 1px solid #ff305b;
+    margin: auto;
+}
+#blog .centerline {
+    width: 160px;
+    height: 4px;
+    margin: auto;
+    border-bottom: 1px solid #ff305b;
+} 
+#blog .container {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+#blog .container .layers {
+    padding:20px ;
+    background-color: white;
+}
+#blog .container .bloginfo {
+    width: 33.333%;
+    padding:20px;
+    background-color: #f1f1f1;
+    float: left;
+    box-sizing: border-box;
+}
+#blog .container .bloginfo img, iframe {
+    width: 100%;
+}
+#blog .container .bloginfo .text p {
+   font-size: 15px;
+   color: rgb(96, 95, 95);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#blog .container .bloginfo .text h3 {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#blog .container .bloginfo .text .active {
+    transition: 1s;
+    font-weight: 50px;
+    color: rgb(47, 46, 46);
+}
+#blog .container .bloginfo .text .active:hover {
+    color: #ff305b;
+    cursor: pointer;
+}
+.clr {
+    clear: both;
+}
+
+#contact {
+    width: 100%;
+    margin-bottom: 80px;
+}
+#contact h2 {
+    padding-top: 60px;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(47, 46, 46);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact .line {
+    width: 80px;
+    height: 4px;
+    border-bottom: 1px solid #ff305b;
+    margin: auto;
+}
+#contact .centerline {
+    width: 160px;
+    height: 4px;
+    margin: auto;
+    border-bottom: 1px solid #ff305b;
+}
+#contact .container {
+    width: 50%;
+    padding-top: 40px ;
+    padding-bottom: 20px;
+    margin: auto;
+}
+#contact .container form {
+    width: 100%;
+    padding-left: 30px;
+}
+#contact .container #name {
+    width: 45%;
+    padding:10px 25px ;
+    border: 1px solid rgb(141, 139, 139);
+    border-radius: 4px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+#contact .container #email {
+    width: 45%;
+    padding: 10px 25px ;
+    border: 1px solid rgb(141, 139, 139);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#contact .container #subject {
+    width: 92%;
+    padding: 10px 25px ;
+    border: 1px solid rgb(141, 139, 139);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+#contact .container #message {
+    width: 92%;
+    padding: 10px 25px ;
+    border: 1px solid rgb(141, 139, 139);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+#contact .container #message::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact .container .btn {
+    padding: 10px 25px;
+    color: #fff;
+    background-color: #ff305b;
+    border: none;
+    border-radius: 4px;
+    transition: 1s;
+    margin-right: 20px;
+}
+#contact .container .btn:hover {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+#footer {
+    width: 100%;
+    background-color: #333333;
+}
+#footer .container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #333333;
+}
+#footer .container ul {
+    list-style: none;
+}
+#footer .container li {
+    display: inline-block;
+    padding-inline: 10px;
+}
+#footer .container p {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#footer .container p span {
+    color: #ff305b;
+}
+#footer .container p span:hover {
+    text-decoration: underline;
+}
+#footer .container li a {
+    color: #fff;
+    transition: 1s;
+}
+#footer .container li a:hover {
+    color: #ff305b;
+}
+
+/* media query */
+@media screen and (max-width: 700px) {
+    #home .navbar ul {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    #about .about-image {
+        width: 100%;
+    }
+    #about .about-info {
+        width: 100%;
+    }
+    #services .container {
+        width: 80%;
+    }
+    #services .container .title {
+        width: 100%;
+    }
+    #portfolio .portfolio-area {
+        width: 80%;
+    }
+    #portfolio .portfolio-image {
+        width: 100%;
+    }
+    #testimonial .feedback-info {
+        width: 80%;
+    }
+    #testimonial .feedback-info .feedback-image {
+        width: 30%;
+    }
+    #testimonial .feedback-info .text {
+        width: 70%;
+    }
+    #blog .container {
+        width: 80%;
+    }
+    #blog .container .bloginfo {
+        width:100% ;
+    }
+    #contact .container {
+        width: 80%;
+    }
+    #footer .container {
+        width: 100%;
+    }
+}
+@media screen and (min-width:700px) and (max-width:1200px) {
+    #home .navbar ul {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    #about .about-image {
+        width: 80%;
+    }
+    #about .about-info {
+        width: 80%;
+    }
+    #services .container {
+        width: 50%;
+    }
+    #services .container .title {
+        width: 100%;
+    }
+    #portfolio .portfolio-area {
+        width: 50%;
+    }
+    #portfolio .portfolio-image {
+        width: 100%;
+    }
+    #testimonial .feedback-info {
+        width: 50%;
+    }
+    #testimonial .feedback-info .feedback-image {
+        width: 40%;
+    }
+    #testimonial .feedback-info .text {
+        width: 60%;
+    }
+    #blog .container {
+        width: 50%;
+    }
+    #blog .container .bloginfo {
+        width:100% ;
+    }
+    #contact .container {
+        width: 50%;
+    }
+    #footer .container {
+        width: 100%;
+    }
+}
